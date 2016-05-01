@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PowerMock framework site</title>
+	<meta name="keywords" content="java, powermock, github, blog, mock, mock objects, testing, tdd, unit tests">
+	<meta name="description" content="PowerMock is a Java framework that allows you to unit test code normally regarded as untestable.">
+  <link rel="stylesheet" href="combo.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  
+	
+</head>
+<body>
+  <div id="main">
+
+    <nav><ul>
+      
+        
+        <li class="p-intro"><a href="#intro">Intro</a></li>
+      
+        
+        <li class="p-news"><a href="#news">News</a></li>
+      
+        
+        <li class="p-documents"><a href="#documents">Documents</a></li>
+      
+        
+        <li class="p-release-notes"><a href="#release-notes">Release Notes</a></li>
+      
+    </ul></nav>
+
+
+    
+      
+      <div id="intro" class="section p-intro">
+        
+        <div class="container ">
+          <p><img alt="PowerMock" src="https://github.com/powermock/powermock.github.io/raw/master/img/logo.png." width="279" height="140" /></p>
+
+<p><a href="https://travis-ci.org/jayway/powermock"><img src="https://travis-ci.org/jayway/powermock.svg" alt="Build Status" /></a>
+<a href="https://maven-badges.herokuapp.com/maven-central/org.powermock/powermock"><img src="https://maven-badges.herokuapp.com/maven-central/org.powermock/powermock/badge.svg" alt="Maven Central" /></a>
+<a href="http://www.javadoc.io/doc/org.powermock/powermock"><img src="https://javadoc-emblem.rhcloud.com/doc/org.powermock/powermock/badge.svg" alt="Javadoc" /></a></p>
+
+<p>Mockito: <a href="https://www.versioneye.com/java/org.powermock:powermock-api-mockito/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-api-mockito/reference_badge.svg?style=flat" alt="Reference Status" /></a>
+Easymock: <a href="https://www.versioneye.com/java/org.powermock:powermock-api-easymock/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-api-easymock/reference_badge.svg?style=flat" alt="Reference Status" /></a>
+jUnit: <a href="https://www.versioneye.com/java/org.powermock:powermock-module-junit4/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-module-junit4/reference_badge.svg?style=flat" alt="Reference Status" /></a>
+TestNG <a href="https://www.versioneye.com/java/org.powermock:powermock-module-testng/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-module-testng/reference_badge.svg?style=flat" alt="Reference Status" /></a></p>
+
+<p>Writing unit tests can be hard and sometimes good design has to be sacrificed for the sole purpose of testability. Often testability corresponds to good design, but this is not always the case. For example final classes and methods cannot be used, private methods sometimes need to be protected or unnecessarily moved to a collaborator, static methods should be avoided completely and so on simply because of the limitations of existing frameworks.</p>
+
+<p>PowerMock is a framework that extends other mock libraries such as EasyMock with more powerful capabilities. PowerMock uses a custom classloader and bytecode manipulation to enable mocking of static methods, constructors, final classes and methods, private methods, removal of static initializers and more. By using a custom classloader no changes need to be done to the IDE or continuous integration servers which simplifies adoption. Developers familiar with the supported mock frameworks will find PowerMock easy to use, since the entire expectation API is the same, both for static methods and constructors. PowerMock aims to extend the existing API’s with a small number of methods and annotations to enable the extra features. Currently PowerMock supports EasyMock and Mockito.</p>
+
+<p>When writing unit tests it is often useful to bypass encapsulation and therefore PowerMock includes several features that simplifies reflection specifically useful for testing. This allows easy access to internal state, but also simplifies partial and private mocking.</p>
+
+<p>Please note that PowerMock is mainly intended for people with expert knowledge in unit testing. Putting it in the hands of junior developers may cause more harm than good.</p>
+
+<p><span id="forkongithub">
+  <a href="https://github.com/jayway/powermock" class="bg-green">
+      Fork me on GitHub
+  </a>
+</span></p>
+
+        </div>
+      </div>
+    
+      
+      <div id="news" class="section p-news">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-newspaper-o fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">News</h5>
+        </div>
+        
+        <div class="container ">
+          <h2 id="news">News</h2>
+<ul>
+  <li>2016-05-01: PowerMock 1.6.5 has been released with new features such as <code>@TestSubject</code> support for <a href="http://easymock.org/">EasyMock</a>, experimental support for <a href="http://mockito.org/">Mockito 2</a> as well as bug fixes and other imporvements. See <a href="https://github.com/jayway/powermock/wiki/Release-Notes-PowerMock-1.6.5">release notes</a> and <a href="https://raw.githubusercontent.com/jayway/powermock/master/changelog.txt">change log</a> for details. We also want to give a warm welcome to our new core committer <a href="https://github.com/thekingnothing">Arthur Zagretdinov</a>.</li>
+  <li>2015-12-11: PowerMock 1.6.4 has been released with better support for <a href="http://eclemma.org/jacoco/">Jacoco</a> and improvements to the <a href="https://github.com/jayway/powermock/wiki/JUnit_Delegating_Runner">DelegatingPowerMockRunner</a> as well as some other minor fixes. See <a href="https://raw.githubusercontent.com/jayway/powermock/master/changelog.txt">change log</a> for details.</li>
+  <li>2015-10-02: PowerMock 1.6.3 has been released with support for EasyMock 3.4 as well as compatibility with ByteBuddy and various other fixes. See <a href="https://raw.githubusercontent.com/jayway/powermock/master/changelog.txt">change log</a> for details.)</li>
+</ul>
+
+        </div>
+      </div>
+    
+      
+      <div id="documents" class="section p-documents">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-cogs fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Documents</h5>
+        </div>
+        
+        <div class="container ">
+          <h2 id="documentation">Documentation</h2>
+<ul>
+  <li><a href="https://github.com/jayway/powermock/wiki/GettingStarted">Getting Started</a></li>
+  <li><a href="https://github.com/jayway/powermock/wiki/Downloads">Downloads</a></li>
+  <li><a href="https://github.com/jayway/powermock/wiki/Motivation">Motivation</a></li>
+  <li>Javadoc
+    <ul>
+      <li><a href="http://www.javadoc.io/doc/org.powermock/powermock-api-easymock/1.6.4">EasyMock API extension</a> (<a href="http://static.javadoc.io/org.powermock/powermock-api-easymock/1.6.4/org/powermock/api/easymock/PowerMock.html">PowerMock class</a>)</li>
+      <li><a href="http://www.javadoc.io/doc/org.powermock/powermock-api-mockito/1.6.4">Mockito API extension</a> (<a href="http://static.javadoc.io/org.powermock/powermock-api-mockito/1.6.4/org/powermock/api/mockito/PowerMockito.html">PowerMockito class</a>)</li>
+      <li><a href="http://www.javadoc.io/doc/org.powermock/powermock-reflect/1.6.4">PowerMock Reflect</a> (<a href="http://static.javadoc.io/org.powermock/powermock-reflect/1.6.4/org/powermock/reflect/Whitebox.html">Whitebox class</a>)</li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/jayway/powermock/wiki/EasyMock">EasyMock</a>
+    <ul>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockStatic">Mock Static</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockFinal">Mock Final</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockPrivate">Mock Private</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockConstructor">Mock New</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockPartial">Mock Partial</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/ReplayAllAndVerifyAll">Replay and verify all</a></li>
+    </ul>
+  </li>
+  <li>Mockito
+    <ul>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockitoUsage">Mockito 1.8+</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockitoUsage_Legacy">Mockito 1.7</a></li>
+    </ul>
+  </li>
+  <li>Common
+    <ul>
+      <li><a href="https://github.com/jayway/powermock/wiki/BypassEncapsulation">Bypass Encapsulation</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/SuppressUnwantedBehavior">Suppress Unwanted Behavior</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/TestListeners">Test Listeners</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockPolicies">Mock Policies</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/MockSystem">Mock system classes</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/jayway/powermock/wiki/TestNG_usage">TestNG</a></li>
+  <li><a href="https://github.com/jayway/powermock/wiki/JUnit_Delegating_Runner">Delegate to another JUnit Runner</a></li>
+  <li><a href="https://github.com/jayway/powermock/wiki/PowerMock_tutorial">Tutorial</a></li>
+  <li>Experimental
+    <ul>
+      <li><a href="https://github.com/jayway/powermock/wiki/PowerMockRule">Bootstrap using a JUnit Rule</a></li>
+      <li><a href="https://github.com/jayway/powermock/wiki/PowerMockAgent">Bootstrap using a Java Agent</a></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/jayway/powermock/wiki/osgi">OSGi</a></li>
+</ul>
+
+        </div>
+      </div>
+    
+      
+      <div id="release-notes" class="section p-release-notes">
+        
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-file-text fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">Release Notes</h5>
+        </div>
+        
+        <div class="container ">
+          <h1 id="release-notes">Release Notes</h1>
+<p>## PowerMock 1.6.5
+### Highlights
+  * We have a new core committer <a href="https://github.com/thekingnothing">Arthur Zagretdinov</a>, big welcome!
+  * Experimental support for Mockito 2.x. See <a href="https://github.com/jayway/powermock/wiki/GettingStarted">getting started guide</a> to get started.
+  * PowerMockRunner now processes JUnit Rules correctly (issue <a href="https://github.com/jayway/powermock/issues/427">427</a>)
+  * Added support for <code>@TestSubject</code> in EasyMock API (issue <a href="https://github.com/jayway/powermock/issues/605">605</a>)
+  * PowerMockRunner run tests defined in super class (issue <a href="https://github.com/jayway/powermock/issues/352">352</a>)</p>
+
+<h3 id="other-changes">Other changes</h3>
+<p>See <a href="https://raw.githubusercontent.com/jayway/powermock/master/changelog.txt">change log</a> for more details
+## PowerMock 1.4.5
+## PowerMock 1.3.7
+## PowerMock 1.3.6
+## PowerMock 1.3.0</p>
+
+
+        </div>
+      </div>
+    
+
+
+    <div id="footer" class="section text-white">
+      <div class="container">
+        
+        
+<p>PowerMock is <a href="https://github.com/jayway/powermock">open source</a>
+—
+Issue <a href="https://github.com/jayway/powermock/issues">tracker</a>
+—
+Mailing <a href="https://groups.google.com/forum/#!forum/powermock">list</a></p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="site.js"></script>
+</html>

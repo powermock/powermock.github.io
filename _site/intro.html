@@ -1,0 +1,24 @@
+<p><img alt="PowerMock" src="https://github.com/powermock/powermock.github.io/raw/master/img/logo.png." width="279" height="140" /></p>
+
+<p><a href="https://travis-ci.org/jayway/powermock"><img src="https://travis-ci.org/jayway/powermock.svg" alt="Build Status" /></a>
+<a href="https://maven-badges.herokuapp.com/maven-central/org.powermock/powermock"><img src="https://maven-badges.herokuapp.com/maven-central/org.powermock/powermock/badge.svg" alt="Maven Central" /></a>
+<a href="http://www.javadoc.io/doc/org.powermock/powermock"><img src="https://javadoc-emblem.rhcloud.com/doc/org.powermock/powermock/badge.svg" alt="Javadoc" /></a></p>
+
+<p>Mockito: <a href="https://www.versioneye.com/java/org.powermock:powermock-api-mockito/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-api-mockito/reference_badge.svg?style=flat" alt="Reference Status" /></a>
+Easymock: <a href="https://www.versioneye.com/java/org.powermock:powermock-api-easymock/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-api-easymock/reference_badge.svg?style=flat" alt="Reference Status" /></a>
+jUnit: <a href="https://www.versioneye.com/java/org.powermock:powermock-module-junit4/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-module-junit4/reference_badge.svg?style=flat" alt="Reference Status" /></a>
+TestNG <a href="https://www.versioneye.com/java/org.powermock:powermock-module-testng/references"><img src="https://www.versioneye.com/java/org.powermock:powermock-module-testng/reference_badge.svg?style=flat" alt="Reference Status" /></a></p>
+
+<p>Writing unit tests can be hard and sometimes good design has to be sacrificed for the sole purpose of testability. Often testability corresponds to good design, but this is not always the case. For example final classes and methods cannot be used, private methods sometimes need to be protected or unnecessarily moved to a collaborator, static methods should be avoided completely and so on simply because of the limitations of existing frameworks.</p>
+
+<p>PowerMock is a framework that extends other mock libraries such as EasyMock with more powerful capabilities. PowerMock uses a custom classloader and bytecode manipulation to enable mocking of static methods, constructors, final classes and methods, private methods, removal of static initializers and more. By using a custom classloader no changes need to be done to the IDE or continuous integration servers which simplifies adoption. Developers familiar with the supported mock frameworks will find PowerMock easy to use, since the entire expectation API is the same, both for static methods and constructors. PowerMock aims to extend the existing API’s with a small number of methods and annotations to enable the extra features. Currently PowerMock supports EasyMock and Mockito.</p>
+
+<p>When writing unit tests it is often useful to bypass encapsulation and therefore PowerMock includes several features that simplifies reflection specifically useful for testing. This allows easy access to internal state, but also simplifies partial and private mocking.</p>
+
+<p>Please note that PowerMock is mainly intended for people with expert knowledge in unit testing. Putting it in the hands of junior developers may cause more harm than good.</p>
+
+<p><span id="forkongithub">
+  <a href="https://github.com/jayway/powermock" class="bg-green">
+      Fork me on GitHub
+  </a>
+</span></p>

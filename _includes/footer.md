@@ -1,8 +1,6 @@
 
-
-Design by Tim O'Brien [t413.com](http://t413.com/)
+PowerMock is [open source]({{ site.source_link }})
 &mdash;
-[SinglePaged theme](https://github.com/t413/SinglePaged)
+Issue [tracker](https://github.com/jayway/powermock/issues)
 &mdash;
-this site is [open source]({{ site.source_link }})
-
+Mailing [list](https://groups.google.com/forum/#!forum/powermock)
