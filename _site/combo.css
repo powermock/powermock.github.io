@@ -501,10 +501,15 @@ html { box-sizing: border-box; }
 .text-turquoise a { color: #0fbfcf; }
 .bg-turquoise     { background-color: #0fbfcf !important; }
 
-.border-dark { border-color: #0a7d88 !important; }
-.text-dark   { color: #0a7d88; }
-.text-dark a { color: #0a7d88; }
-.bg-dark     { background-color: #0a7d88 !important; }
+.border-dark { border-color: #acacac !important; }
+.text-dark   { color: #acacac; }
+.text-dark a { color: #acacac; }
+.bg-dark     { background-color: #acacac !important; }
+
+.border-light { border-color: #d2d2d2 !important; }
+.text-light   { color: #d2d2d2; }
+.text-light a { color: #d2d2d2; }
+.bg-light     { background-color: #d2d2d2 !important; }
 
 
 /* ----- per-post colors! ----- */
@@ -512,34 +517,34 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-release-notes { border-color: #0fbfcf; }
-  #release-notes { background-color: #0fbfcf !important; color: #f8f8f8; }
+  nav .p-release-notes { border-color: #acacac; }
+  #release-notes { background-color: #acacac !important; color: #f8f8f8; }
   #release-notes a { color: #f8f8f8; }
-  #release-notes .sectiondivider { color: #0fbfcf; }
+  #release-notes .sectiondivider { color: #acacac; }
 
   
   
   
-  nav .p-documents { border-color: #0a7d88; }
-  #documents { background-color: #0a7d88 !important; color: #f8f8f8; }
+  nav .p-documents { border-color: #d2d2d2; }
+  #documents { background-color: #d2d2d2 !important; color: #f8f8f8; }
   #documents a { color: #f8f8f8; }
-  #documents .sectiondivider { color: #0a7d88; }
+  #documents .sectiondivider { color: #d2d2d2; }
 
   
   
   
-  nav .p-news { border-color: #0fbfcf; }
-  #news { background-color: #0fbfcf !important; color: #f8f8f8; }
+  nav .p-news { border-color: #acacac; }
+  #news { background-color: #acacac !important; color: #f8f8f8; }
   #news a { color: #f8f8f8; }
-  #news .sectiondivider { color: #0fbfcf; }
+  #news .sectiondivider { color: #acacac; }
 
   
   
   
-  nav .p-intro { border-color: #0a7d88; }
-  #intro { background-color: #0a7d88 !important; color: #f8f8f8; }
-  #intro a { color: #f8f8f8; }
-  #intro .sectiondivider { color: #0a7d88; }
+  nav .p-intro { border-color: #f8f8f8; }
+  #intro { background-color: #f8f8f8 !important; color: #111111; }
+  #intro a { color: #111111; }
+  #intro .sectiondivider { color: #f8f8f8; }
 
 
 

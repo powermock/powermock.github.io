@@ -1,6 +1,7 @@
 ---
-bg: dark
+bg: light
 color: white
+title: Docs
 fa-icon: cogs
 ---
 ## Documentation
