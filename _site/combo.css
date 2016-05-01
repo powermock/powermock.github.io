@@ -501,6 +501,11 @@ html { box-sizing: border-box; }
 .text-turquoise a { color: #0fbfcf; }
 .bg-turquoise     { background-color: #0fbfcf !important; }
 
+.border-dark { border-color: #0a7d88 !important; }
+.text-dark   { color: #0a7d88; }
+.text-dark a { color: #0a7d88; }
+.bg-dark     { background-color: #0a7d88 !important; }
+
 
 /* ----- per-post colors! ----- */
 
@@ -515,10 +520,10 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-documents { border-color: #111111; }
-  #documents { background-color: #111111 !important; color: #f8f8f8; }
+  nav .p-documents { border-color: #0a7d88; }
+  #documents { background-color: #0a7d88 !important; color: #f8f8f8; }
   #documents a { color: #f8f8f8; }
-  #documents .sectiondivider { color: #111111; }
+  #documents .sectiondivider { color: #0a7d88; }
 
   
   
@@ -531,10 +536,10 @@ html { box-sizing: border-box; }
   
   
   
-  nav .p-intro { border-color: #111111; }
-  #intro { background-color: #111111 !important; color: #f8f8f8; }
+  nav .p-intro { border-color: #0a7d88; }
+  #intro { background-color: #0a7d88 !important; color: #f8f8f8; }
   #intro a { color: #f8f8f8; }
-  #intro .sectiondivider { color: #111111; }
+  #intro .sectiondivider { color: #0a7d88; }
 
 
 

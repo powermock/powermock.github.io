@@ -1,5 +1,5 @@
 ---
-bg: black
+bg: dark
 color: white
 fa-icon: cogs
 ---
